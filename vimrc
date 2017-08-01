@@ -1,3 +1,7 @@
+"Remove Menubar and Toolbar for use in gVim
+set guioptions -=m 
+set guioptions -=T
+
 set langmenu=en_US
 let $LANG = 'en_US'
 set noeb vb t_vb=
@@ -20,6 +24,7 @@ set visualbell
 set noerrorbells
 set nobackup
 set noswapfile
+syntax on
 filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
@@ -29,3 +34,6 @@ set wildmode=longest,list
 
 " gitgutter
 set updatetime=250
+
+
+colorscheme onedark
