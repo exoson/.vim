@@ -1,5 +1,6 @@
 set langmenu=en_US
 let $LANG = 'en_US'
+set noeb vb t_vb=
 noremap <c-s> :w<CR>
 nnoremap ¤ $
 nnoremap ½ 0
