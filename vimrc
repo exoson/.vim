@@ -23,3 +23,6 @@ set shiftwidth=4
 set expandtab
 set wildmenu
 set wildmode=longest,list
+
+" gitgutter
+set updatetime=250
