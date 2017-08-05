@@ -3,7 +3,7 @@ if has('gui_running')
   set guioptions -=m 
   set guioptions -=T
 endif
-
+syn match pythonBoolean "\(\W\|^\)\zsself\ze\." 
 set langmenu=en_US
 let $LANG = 'en_US'
 set noeb vb t_vb=
@@ -39,6 +39,7 @@ set shiftwidth=4
 set expandtab
 set wildmenu
 set wildmode=longest,list
+set relativenumber
 
 " gitgutter
 set updatetime=250
