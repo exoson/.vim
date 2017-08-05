@@ -1,17 +1,25 @@
-"Remove Menubar and Toolbar for use in gVim
-set guioptions -=m 
-set guioptions -=T
+if has('gui_running')
+  "Remove Menubar and Toolbar for use in gVim
+  set guioptions -=m 
+  set guioptions -=T
+endif
 
 set langmenu=en_US
 let $LANG = 'en_US'
 set noeb vb t_vb=
 noremap <c-s> :w<CR>
-nnoremap Â¤ $
-nnoremap Â½ 0
-nnoremap Â§ ^
-vnoremap Â¤ $
-vnoremap Â½ 0
-vnoremap Â§ ^
+nnoremap ¤ $
+nnoremap ½ 0
+nnoremap § ^
+vnoremap ¤ $
+vnoremap ½ 0
+vnoremap § ^
+nnoremap tk :tabnext<CR>
+nnoremap tj :tabprev<CR>
+nnoremap tl :tablast<CR>
+nnoremap th :tabfirst<CR>
+nnoremap tn :tabnew<Space>
+nnoremap tw :tabclose<CR>
 set hidden
 set nowrap
 set backspace=indent,eol,start
