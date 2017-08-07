@@ -8,12 +8,12 @@ set langmenu=en_US
 let $LANG = 'en_US'
 set noeb vb t_vb=
 noremap <c-s> :w<CR>
-nnoremap ¤ $
-nnoremap ½ 0
-nnoremap § ^
-vnoremap ¤ $
-vnoremap ½ 0
-vnoremap § ^
+nnoremap Â¤ $
+nnoremap Â½ 0
+nnoremap Â§ ^
+vnoremap Â¤ $
+vnoremap Â½ 0
+vnoremap Â§ ^
 nnoremap tk :tabnext<CR>
 nnoremap tj :tabprev<CR>
 nnoremap tl :tablast<CR>
