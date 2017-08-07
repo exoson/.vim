@@ -26,6 +26,7 @@ set backspace=indent,eol,start
 set number
 set showmatch
 set incsearch
+set hlsearch
 set history=1000
 set undolevels=1000
 set visualbell
