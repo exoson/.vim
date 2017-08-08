@@ -4,6 +4,7 @@ if has('gui_running')
   set guioptions -=T
 endif
 syn match pythonBoolean "\(\W\|^\)\zsself\ze\." 
+ab pdb import pdb; pdb.set_trace()
 set langmenu=en_US
 let $LANG = 'en_US'
 set noeb vb t_vb=
