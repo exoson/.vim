@@ -21,6 +21,7 @@ nnoremap tl :tablast<CR>
 nnoremap th :tabfirst<CR>
 nnoremap tn :tabnew<Space>
 nnoremap tw :tabclose<CR>
+nnoremap <F5> :checktime
 set hidden
 set nowrap
 set backspace=indent,eol,start
