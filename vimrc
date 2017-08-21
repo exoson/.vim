@@ -1,13 +1,14 @@
 if has('gui_running')
   "Remove Menubar and Toolbar for use in gVim
-  set guioptions -=m 
+  set guioptions -=m
   set guioptions -=T
 endif
-syn match pythonBoolean "\(\W\|^\)\zsself\ze\." 
+syn match pythonBoolean "\(\W\|^\)\zsself\ze\."
 ab pdb import pdb; pdb.set_trace()
 set langmenu=en_US
 let $LANG = 'en_US'
 set noeb vb t_vb=
+autocmd BufWritePre * %s/\s\+$//e
 noremap <c-s> :w<CR>
 nnoremap ¤ $
 nnoremap ½ 0
@@ -21,7 +22,7 @@ nnoremap tl :tablast<CR>
 nnoremap th :tabfirst<CR>
 nnoremap tn :tabnew<Space>
 nnoremap tw :tabclose<CR>
-nnoremap <F5> :checktime
+nnoremap <F5> :checktime<CR>
 set hidden
 set nowrap
 set backspace=indent,eol,start
