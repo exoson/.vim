@@ -1,4 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/ekattainen/Documents/rumpy/converters'
-let g:netrw_dirhist_2='/home/ekattainen/Documents/rumpy/converters/cyclops'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_3='C:/Local/kattaine/Programs/customcv/custombuild/install/x64/vc15/lib'
