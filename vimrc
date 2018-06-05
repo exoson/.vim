@@ -22,6 +22,9 @@ nnoremap tl :tablast<CR>
 nnoremap th :tabfirst<CR>
 nnoremap tn :tabnew<Space>
 nnoremap tw :tabclose<CR>
+nnoremap ts :vimgrep<Space>
+nnoremap ti :cn<CR>
+nnoremap tu :cp<CR>
 nnoremap <F5> :checktime<CR>
 set hidden
 set nowrap
