@@ -67,3 +67,5 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " let g:syntastic_python_pylint_post_args = '--msg-template="{path}:{line}:{column}:{C}: [{symbol} {msg_id}] {msg}"'
+
+set shellcmdflag=-ic
