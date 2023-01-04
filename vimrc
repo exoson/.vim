@@ -69,6 +69,8 @@ nnoremap tj :tabprev<CR>
 nnoremap tl :tablast<CR>
 nnoremap th :tabfirst<CR>
 nnoremap tn :tabnew<Space>
+nnoremap tb :tabnew<Space>%:p:h
+nnoremap tm :e<Space>%:p:h
 nnoremap tw :tabclose<CR>
 nnoremap ts :vimgrep<Space>
 nnoremap ti :cn<CR>
@@ -95,6 +97,7 @@ set expandtab
 set wildmenu
 set wildmode=longest,list
 set relativenumber
+set pastetoggle=<F3>
 
 " gitgutter
 set updatetime=250
