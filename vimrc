@@ -11,10 +11,10 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'jjo/vim-cue'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -30,6 +30,7 @@ Plugin 'ycm-core/YouCompleteMe'
 "
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+" Plugin 'tpope/vim-fugitive'
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -46,6 +47,16 @@ let g:ycm_java_jdtls_extension_path = [
   \ '/home/ekattainen/.vim/pack/vimspector/opt/vimspector/gadgets/linux/'
   \]
 
+let g:ycm_auto_hover=''
+
+if &term =~ '^screen'
+    " tmux will send xterm-style keys when its xterm-keys option is on
+    execute "set <xUp>=\e[1;*A"
+    execute "set <xDown>=\e[1;*B"
+    execute "set <xRight>=\e[1;*C"
+    execute "set <xLeft>=\e[1;*D"
+endif
+
 if has('gui_running')
   "Remove Menubar and Toolbar for use in gVim
   set guioptions -=m
@@ -56,7 +67,7 @@ ab pdb import pdb; pdb.set_trace()
 set langmenu=en_US
 let $LANG = 'en_US'
 set noeb vb t_vb=
-autocmd BufWritePre * %s/\s\+$//e
+" autocmd BufWritePre * %s/\s\+$//e
 noremap <c-s> :w<CR>
 nnoremap ¤ $
 nnoremap ½ 0
@@ -120,6 +131,7 @@ let g:syntastic_check_on_wq = 0
 " let g:syntastic_python_pylint_post_args = '--msg-template="{path}:{line}:{column}:{C}: [{symbol} {msg_id}] {msg}"'
 
 set shellcmdflag=-ic
+set clipboard=unnamedplus
 
 
 command Jsonformat %!jq .
