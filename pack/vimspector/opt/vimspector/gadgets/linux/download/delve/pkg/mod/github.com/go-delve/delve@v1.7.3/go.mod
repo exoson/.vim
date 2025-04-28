@@ -13,11 +13,11 @@ require (
 	github.com/mattn/go-isatty v0.0.3
 	github.com/peterh/liner v1.2.1
 	github.com/sirupsen/logrus v1.6.0
-	github.com/spf13/cobra v1.1.3
 	github.com/stretchr/testify v1.7.0 // indirect
 	go.starlark.net v0.0.0-20200821142938-949cc6f4b097
 	golang.org/x/arch v0.0.0-20190927153633-4e8777c89be4
-	golang.org/x/sys v0.0.0-20211019181941-9d821ace8654
+	golang.org/x/sys v0.1.0
 	golang.org/x/tools v0.1.8-0.20211028023602-8de2a7fd1736
+	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
 	gopkg.in/yaml.v2 v2.4.0
 )
